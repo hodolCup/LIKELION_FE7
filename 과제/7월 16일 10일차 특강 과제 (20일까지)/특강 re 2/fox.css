@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.background {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    object-fit: cover;
+}
+
+.ground {
+    position: absolute;
+    top: 357px;
+    left: 490px;
+    border-radius: 0 0 30px 30px;
+    background-color: #9c6035;
+    border-bottom: 10px solid #46260e;
+    box-sizing: border-box;
+    width: 300px;
+    height: 306px;
+}
+
+.lorem-ipsum-dolor {
+    margin-block-start: 0;
+    margin-block-end: 3px;
+}
+
+.donec-quam-felis {
+    margin: 0;
+}
+
+.lorem-ipsum-dolor-container {
+    position: absolute;
+    top: 468px;
+    left: 510px;
+    display: inline-block;
+    width: 260px;
+    height: 130px;
+}
+
+.fox1 {
+    position: absolute;
+    top: 417px;
+    left: 510px;
+    font-size: 36px;
+    color: #fff;
+}
+
+.fox-icon,
+.green-1-icon {
+    position: absolute;
+    top: 357px;
+    left: 490px;
+    width: 300px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.fox-icon {
+    top: 57px;
+    height: 300px;
+}
+
+.fox {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    color: #e8bc9c;
+    font-family: Arial;
+}
