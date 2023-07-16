@@ -1,0 +1,95 @@
+h1, h2, ul, p {
+    margin: unset;
+    padding: unset; /* margin: initial;  margin을 초기값으로 돌린다 */
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2 {
+    font-size: unset;
+    font-weight: unset;
+}
+
+h1 {
+    font-size: inherit; /*상속이 원래부터 되면 inherit. 안되면 initial */
+}
+
+body {
+    background-image: url(images/background.gif);
+}
+
+.wrapper {  /*div생략 가능. 어차피 wrapper 얘만 씀. */
+    background-color: #ddd;
+    width: 800px;
+    height: auto;
+    margin: 100px auto;
+}
+
+.header {
+    background-image: url(images/cover02.png);
+    background-size: cover;  /* 사이즈가 엉망이라 사이즈 자체를 조절.*/
+    background-position: center;
+    height: 100px 0; 
+    color: white; /*이걸로 p에 상속이 되서 여기다 넣으면 편리함. 하지만 margin등 안되는게 대부분. 상속 여부는 mdn에 검색했을때, inherit이면 되는것이다.*/
+}
+
+.header img {
+    margin: 0 auto; 
+    display: block; /* 이게 가운데 정렬이 안되는 이유는 옆자리가 다음 컨텐츠의 자리이기 때문에. 그래서 display:block을 하면 된다. block은 다른 요소를 넣을수 없다는 뜻이라 다음 컨텐츠들을 다 쳐내버림.*/
+}
+
+.header h1 {
+    background-color: orange;
+    text-align: center;  /* 글이 가운데로 간게 아니다. 컨텐츠만 가운데로 갔다. h1 내에서 중앙정렬이 되었다는거다.*/
+    /* margin: 0 auto; 그래서 전체를 가운데로 옮기겠다면 이걸 쓰면 가운데로 가긴해. */
+}
+
+.header p {  /*header 한칸 띄면 header의 후손들 p*/
+    border-top: 4px solid white;
+    width: fit-content; /* content가 넘치면 width가 맞춰서 늘어난다.*/
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* border-top: 4px solid white;
+width: fit-content;
+padding: 10px 20px;
+margin: 0 auto; */
+
+.section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(images/icon-information.png);
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+}
+
+.skill {
+    background-image: url(images/icon-skills.png); /*섹션에도 있지만 후자가 덮어서 적용되기때문에 */
+}
+
+.section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: salmon;
+}
+
+.list li {
+    border-left: 5px solid #ddd;
+    padding-left: 50px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0; 
+    background-color: #f4f4f4;
+}
