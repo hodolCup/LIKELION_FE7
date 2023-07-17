@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            display: grid;
+            /* width: 1000px; */
+            /* grid-template-columns: repeat(3, 1fr ); 은 (fr은 비율)
+            /* grid-template-columns: 1fr 1fr 1fr; 과 같다. 1fr을 세번 반복
+            /* grid-template-columns: repeat(2, 1fr 2fr);
+            /* grid-template-columns: 1fr 2fr 1fr 2fr; 과 같다. */
+            /* grid-template-columns: 500px 1fr 3fr;  500px과 나머지 1:3 */
+            /* grid-template-columns: 200px 150px 200px; */
+
+            grid-template-columns: minmax(100px, 150px) 1fr 1fr; /*1열 1열 1열 사이즈 */
+            grid-template-rows: minmax(100px, 150px) minmax(50px, 100px); /*왜 민맥스가 두번? 1행 1행 사이즈 */
+            gap: 20px 10px;
+        }
+
+        .item {
+            /* width: 100px; */
+            /* height: 100px; */
+            background-color: skyblue;
+        }
+
+        .item:nth-child(odd) {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt recusandae aperiam iusto nemo esse, quia maiores a doloribus soluta nesciunt, libero laboriosam fuga aspernatur iste, voluptates saepe voluptatum architecto.</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    
+</body>
+</html>
