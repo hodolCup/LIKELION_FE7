@@ -1,0 +1,79 @@
+.wrapper {
+    box-shadow: inset 0 0 20px red; /*테스트하기 좋음*/
+    width: 800px;
+    margin: 100px auto;
+    text-align: center; /*상속이 되어 여기 작성해도 되고 inline 특성이라 margin : auto 가 아니다. */
+}
+
+.lemon {
+    background-color: antiquewhite;
+}
+
+.fruit {
+    background-color: gold;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 50%;
+}
+
+.fruit.lemon {
+    background-color: antiquewhite;
+}
+
+.fruit.orange {
+    background-color: orange;
+}
+
+.fruit.jamong {
+    background-color: orangered;
+}
+
+
+
+
+
+/* ------------------------------------------- 이걸 쓰면 유지보수가 불편해진다. 갑자기 순서를 바꾸라면 어쩔꺼야?
+
+.wrapper a {
+    background-color: orangered;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    display: inline-block; 기존 인라인에서 블록형태로 바꾼다.
+    line-height: 200px;
+    border-radius: 50%;
+    vertical-align: bottom; 텍스트나 이미지를 위나 아래로 확 옮기는..
+    
+    line-height : 
+    텍스트가 한줄에 차지하는 높이를 지정한다. 줄 노트에서 각 간격지정으로 생각하면 쉬움. 기본은 노멀.
+    
+
+}
+.fruit:nth-child(1) {
+    background-color: lemonchiffon;
+}
+.fruit:nth-child(2) {
+    background-color: orange ;
+}
+.fruit:nth-child(3) {
+    background-color: orangered;
+}
+
+------------------------------------------- */
+
+/* .wrapper a.silver {
+    background-color: silver;
+}
+
+.wrapper a.gold {
+    background-color: gold;
+    height: 400px;
+}
+
+.wrapper a.bronze {
+    background-color: burlywood;
+    height: 100px;
+
+} */

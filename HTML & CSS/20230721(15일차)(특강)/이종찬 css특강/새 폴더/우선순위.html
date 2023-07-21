@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITRUS</title>
+    <style>
+
+        h1.wow2 {
+            background-color: blue;
+        }
+
+        h1.wow {
+            background-color: aqua
+        }
+        /* 아래에 있더라도 클래스로 상세한 녀석이 위에있으면 위를 따른다. */
+        /* 하지만 클래스 뒤에 다른 클래스가 추가된다고 해도, 동시에 적으면 후자로 따른다. 그놈이 그놈.*/
+        /* 하지만? 상세하게 적어준다면 상세한 녀석이 위에있어도 그것으로 따른다.
+        ex) h1.wow.wow2 가 위에있으면 이녀석을 따름. */
+
+        h1 {
+            background-color: orange;
+        }
+
+        h1 {
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="wow wow2">Do My Best</h1>
+
+</body>
+</html>

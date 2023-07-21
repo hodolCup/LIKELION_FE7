@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid System</title>
+    <style>
+
+        .container {
+            box-shadow: inset 0 0 20px red;
+            width: 800px;
+            margin: 100px auto;
+            display: flex;
+        }
+
+        .sidebar {
+            box-shadow: inset 0 0 20px blue;
+            flex-basis: 100px;
+            padding: 10px;
+            /* width: 200px; */
+            /* width와 flex-basis:auto의 관계? 뭘 쓰라는건 아니고..*/
+            /* flex-basis가 있으면 min-width 영향도 받는거고 basis가 없고 width가 있으면 width 값만 적용이 되는 */
+            /* width 200준다는 건 basis값을 200으로 준다는거다. */
+            /* main을 존나 늘리면 사이드가 줄어드는데 그건 숨어있는 shrink 때문. */
+        }
+        
+        .main {
+            box-shadow: inset 0 0 20px orangered;
+            flex-basis: auto;
+            flex-grow: 1; 
+            /* 남은 main 붉은칸을 늘려줘! 초기값은 0 */
+            padding: 10px;
+            min-width: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="main">
+            MainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMain
+            <!-- (띄어쓰기 넣으면 줄 바뀜. 띄어쓰기 없으면 한단어) -->
+
+
+        </div>
+    </div>
+</body>
+</html>
