@@ -1,0 +1,122 @@
+body {
+    background-color: #d9d9d9;
+}
+
+/* reset */
+body,
+h1,
+h2,
+p,
+ul,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+input {
+    font: inherit;
+}
+
+button:enabled {
+    cursor: pointer;
+    font: inherit;
+}
+
+/* 공통 CSS */
+.section_one {
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 4px solid #ddd;
+}
+
+h2 {
+    padding-left: 30px;
+    padding-top: 46px;
+    font-size: 24px;
+    font-family: Arial;
+    color: #ff007a;
+    text-align: left;
+}
+
+
+.section_two {
+    width: 100%;
+    height: 414px;
+    background-color: #eee;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 메인 레이아웃 ---------------------------------- */
+main {
+    width: 448px;
+    max-width: 100%;
+    display: grid;
+    gap: margin;
+}
+
+/* 반응형? */
+/* 448부터 적용하겠다. */
+@media (min-width: 448px) {
+    main {
+        grid-template-areas:
+            'section_one'
+            'section_two';
+        grid-template-columns: repeat(1, 1fr);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);  /*상하좌우 중앙정렬!*/
+    }
+}
+
+
+.section_one {
+
+    grid-area: section_one;
+}
+
+.section_two {
+
+    grid-area: section_two;
+
+}
+
+/* 기본 버튼 */
+.btn-list {
+    width: 372px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: white;
+    border: 4px solid #d9d9d9;
+    padding: 11px 12px 9px;
+    text-align: left;
+    margin-top: 40px;
+    margin: 12px 38px;
+    font-size: 16px;
+    font-family: Arial;
+    color: #888;
+    text-align: left;
+}
+
+/* 완료 버튼 */
+.btn-list:disabled {
+    color: #759cff;
+    border: 4px solid #759cff;
+    position: relative;
+    overflow: hidden;
+
+    font-size: 16px;
+    font-family: Arial;
+
+    /* text-align: left; */
+    /*넘쳤을때 멈추게 하겠다.*/
+}
