@@ -1,0 +1,60 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+    }
+    
+
+
+
+.base {
+    position: absolute;
+    top: 66px;
+    left: 166px;
+    width: 318px;
+    height: 374px;
+}
+
+.eye {
+
+    position: relative;
+    border-radius: 50%;
+    background-color: #000;
+    width: 8px;
+    height: 19px;
+}
+
+.left{
+    position: absolute;
+    top: 303px;
+    left: 307px;
+    border-radius: 50%;
+    background-color: rgba(253, 35, 35, 0.6);
+    width: 18px;
+    height: 9px;
+}
+
+.right {
+    position: absolute;
+    top: 167px;
+    left: 334px;
+}
+
+.mouth {
+    position: absolute;
+    top: 303px;
+    left: 307px;
+    border-radius: 50%;
+    background-color: rgba(253, 35, 35, 0.6);
+    width: 18px;
+    height: 9px;
+}
+
+.nose {
+    position: absolute;
+    top: 212px;
+    left: 300px;
+    border-radius: 50%;
+    width: 16px;
+    height: 28px;
+}
