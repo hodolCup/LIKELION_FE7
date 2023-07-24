@@ -1,0 +1,9 @@
+페이지가 여러장이면 반복되는 요소를 먼저 만들면 좋을수있다.
+한페이지면 큰거부터 하면 좋을수있고. 사람하기 나름이지만
+
+
+    grid-template-columns: repeat(2, 1fr); 이게 뭘까...?
+z-index
+position absolute...자리 중앙? relative는 뭐고.
+
+초기화할때, a,h1,button을 따로 inherit하는 이유는?
