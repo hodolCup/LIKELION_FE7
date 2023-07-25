@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>06 Position</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #ddd;
+        }
+
+        .grand-father {
+            background-color: #eee;
+            width: 800px;
+            margin: 0 auto;
+            padding: 1px;
+        }
+
+        .father {
+            background-color: white;
+            width: 300px;
+            height: 200px;
+            margin: 50px auto;
+        }
+
+        .children {
+            width: 100px;
+            height: 100px;
+            /* 벽을 넘어 왼쪽으로 가는법? */
+            /* 1. transform: translateX(-50px); */
+            /* 2. position: relative;
+                left: -50px; */
+            /* 3. margin-left: -50px; */
+            position: absolute;
+            left: 0;
+            right: 0;
+            /* 뷰포트로 설정이 된다. */
+        }
+
+        .pos {
+            background-color: orange;
+            position: absolute;
+            left: 0;
+            right: 0;
+            /* left 다음 right가 써져서 후자우선으로 오른쪽으로 갈 것 같지만 양쪽으로 늘어난다. 같은 속성이 아니기에 */
+            top: 0;
+            bottom: 0;
+            /* 하면 가득 차고 마진/하이트값에 따라 결정. */
+            inset: 0;
+
+            margin: auto auto;
+            width: 300px;
+            height: 300px;
+
+            /* position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            margin: auto;
+            이거하면 정중앙으로 가나? 모르겠다. 테스트. */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grand-father">
+        <div class="father">
+            <img class="children" src="img.png">
+        </div>
+    </div>
+
+</body>
+
+</html>

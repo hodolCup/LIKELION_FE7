@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt-hide{
+            overflow: hidden;  /*텍스트 안에 다른 컨텐츠가 들어갔을때 화면에 보이지않도록 해줌.안전을  위해. */
+            width: 1px;
+            height: 1px;
+            clip-path: inset(50%);
+            /* 경로에 따라 잘라내는 속성 . inset이면 네모 모양으로 잘라냄. 상하좌우 로도 가능하고 하나만 입력하면 모든방향. */
+            /* 기존 체크 ui가 삭제된다. 남아는 있는데 보이지 않음. */
+        }
+        .labl-hold {
+            position: relative;
+        }
+        .labl-hold::before {
+            display: inline-block; /*기본이 인라인이라 블럭 속성을 넣아야한다.*/
+            content: ''; /*내용이 잇어야 나오기때문에 빈 내용이라도 넣어야한다.*/
+            width: 22px;
+            height: 22px;
+            margin-right: 10px;
+            border: 1px solid black;
+            vertical-align: -5px;
+        }
+        /* 가상요소. */
+
+        .inphold:focus-visible+.labl-hold::before {
+            outline: 2px solid teal;
+            outline-offset: 3px;
+            /* 얼마나 범위를 확장할 것인지 */
+        }
+
+        .labl-hold::after {
+            content: '';
+            position: absolute; 
+            /* diplay 블럭 속성을 주지않았는데 포지션을 주니 나타난다. 
+            포지션을 넣으면 알아서 블럭이 됨. 따라서 블럭 속성을 줄거면 포지션만 줘도됨.*/
+            top: -3px;
+            left: 20px;
+            /* 체크박스 위치 이동하는 두 코드 */
+            width: 22px;
+            height: 22px;
+            /* background-image: url('images/checkmark.png');
+            background-size: 22px;
+            background-repeat: no-repeat; */
+            background: url(images/checkmark.png) 0 0 /*백그라운드 포지션*//22px no-repeat;
+            /* 위의 세 코드를 한줄로 해보기. */
+            opacity: 0;   /* 평소에 안보이게 숨김*/
+            transition: all 0.3s;   /* 애니메이션 같은 효과 */
+        }
+/* 체크가 되었을떄 작동. id로 해도되는데 클래스로 함. id는 한개밖에 못써서 불편할수 있기에*/
+/* +연산자? 인접형제 선택자.*/
+        .inphold:checked+.labl-hold::after {
+            left: 0;
+            opacity: 1;
+            /* 누른순간 등장. */
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="inpHold" class="inphold txt-hide">
+    <label for="inpHold" class="labl-hold">로그인 상태 유지</label>  
+    <!-- 레이블. 이름표 역할 input에 id값을 줘서 레이블과 연결 가능하다.-->
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexing</title>
+        <style>
+            body {
+                background-color: brown;
+            }
+            .playground {
+                border: 10px solid maroon;
+                width: 980px;
+                margin: 0 auto;
+                border-radius: 20px;
+                background-color: skyblue;
+                display: flex;
+            }
+            .frog {
+                background-color: mediumseagreen;
+                color: lime;
+                font-size: 40px;
+                margin: 10px;
+                border: 6px solid green;
+                border-radius: 10px;
+                /* flex-basis: 200px; */
+                /* 0이 안되나? 0은 시각적으로 표현이 안된다. 왜냐면 min-width가 auto로 지정되어있기 때문에. 절대 작아질수 없는 최소 사이즈가 정해져있게된다. 물론 min-width을 0으로 설정하면 작아진다. */
+                width: 100px;
+                /* flex-basis를 안하고 width값을 주면 flex-basis의 기본값이 auto이므로 100px로 된다. */
+                /* 이거보다 작아질수있는~ 어쩌구가 작동하지 않고 width 100px로 고정. */
+                
+                flex-shrink: 1; 
+                /* 고통분담. 여유가 있을떈 괜찮아! 하지만 만약 칸이 모자라면 수축을 할껀데.. 여유가 초기값은 1  */
+                /* flex-basis: auto;  자동으로 설정되는 부분?아마.*/
+                /* flex-grow: 얘도 마찬가지; */
+                min-width: 0;
+                /* 기본값은 오토인데? 자식 사이즈로 맞춰준다.  */
+            }
+
+            .frog.covid {
+                background-color: orangered;
+                margin: auto;
+                /* 셋중 하나만 오른쪽으로 옮길수 있을까?
+                빈 공간은 margin:auto로 취할수있는데. 클래스를 지정하고 해주도록 하자 margin-left:auto로 하자.. 다만? 바디 순서를 바꾸면 붙어버리니 margin: 10px auto 로 하자.*/
+            }
+
+            /* .frog.sun {
+                flex-shrink: 0; 
+                난 집주인 개구리라 줄어들지 않을거란 뜻... 
+            }*/
+
+            .frog.cry {
+                flex-shrink: 200;
+                /* 미움을 받는 개구리라 엄청 줄어든다.. 뭐 여유가 있는 상황이라면 멀쩡함. */
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="playground">
+            <div class="frog cry"><img src="images/frog-cry.png" alt=""></div>
+            <div class="frog"><img src="images/frog.png" alt=""></div>
+            <div class="frog"><img src="images/frog.png" alt=""></div>
+            <div class="frog"><img src="images/frog-dj.png" alt=""></div>
+            <div class="frog"><img src="images/frog-dj.png" alt=""></div>
+            <div class="frog sun"><img src="images/frog-disco.png" alt=""></div>
+        </div>
+
+    </body>
+</html>
