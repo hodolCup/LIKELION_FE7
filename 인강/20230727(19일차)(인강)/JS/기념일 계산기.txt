@@ -1,0 +1,123 @@
+step1 기념일 계산기.
+JS로 일자 계산하기. 며칠이 남았는지.
+
+step2
+객제object 알아보기
+이름은 ~고
+나이는 20살이다. 이런식이 객체가 될것.
+var person = {
+name: 'jocoding',
+sayHello: function() {
+console.log('hello')
+age: 20
+}
+앞 : 속성 / 뒤 : 값, 속성값이라고 부른다.
+속성 중 객체를 빼올수가 있다.
+객체.키;
+ex. person.sayHello(); -> hello를 가져옴.
+
+JS는 거의 모든것이 객체다.
+
+    <script>
+        var person = {
+            name: 'jocoding',
+            sayHello: function() { console.log('hello'); }
+        }
+        console.log(person.name);
+        person.sayHello();
+    </script>
+
+하면 jocoding/hello가 뜬다.
+
+step3
+날짜를 다루는 date객체.
+JS에 내장되어있는 내장객체
+
+    <script>
+        //1. Date 객체 생성
+        var now = new Date();
+        //2. 연도를 가져오는 메서드 .getFullYear()
+        console.log(now.getFullYear());
+        //3. 월 정보를 가져오는 메서드 .getMonth() {0: 1월, 1: 2월, ... 10: 11월, 11: 12월}
+        console.log(now.getMonth());
+        //4. 일 정보를 가져오는 메서드 .getDate()
+        console.log(now.getDate());
+        //5. 1970년 1월 1일 00:00:00을 기준으로 흐른 시간을 밀리초로 표시하는 메서드 .getTime()
+        console.log(now.getTime());
+        //6. 특정 일의 Date 객체 생성
+        var christmas = new Date('2020-12-25');
+        console.log(christmas);
+        //7. 특정 ms의 Date 객체 생성
+        var ms = new Date(1000);
+        console.log(ms);
+    </script>
+
+step4
+계산하기
+만난 밀리초 = 오늘.getTime() - 사귄날.getTime()
+만난 일 = 만난 밀리초를 일로 환산
+    <script>
+        var now = new Date();
+        var start = new Date('2020-06-30');
+
+        var timeDiff = now.getTime() - start.getTime();
+        var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
+        $('#love').text(day + '일째');
+    </script>
+
+step5
+기념일까지 남은 날짜
+step4와 유사하지만.
+남은 밀리초 = 기념일.getTime() - 오늘.getTime()
+만난 일 = 만난 밀리초를 일로 환산
+
+    <script>
+        var now = new Date();
+        var start = new Date('2020-06-30');
+
+        var timeDiff = now.getTime() - start.getTime();
+        var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
+        $('#love').text(day + '일째');
+
+        var valentine = new Date('2021-02-14');
+        var timeDiff2 = valentine.getTime() - now.getTime();
+        var day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24) + 1);
+        $('#valentine').text(day2 + '일 남음');
+    </script>
+
+step6
+천일은 언제일까?
+1000일의 밀리초 = 사귄날.getTime() + 999일의.getTime()
+1000일 = new Data(1000일의 밀리초)
+
+
+    <script>
+        var now = new Date();
+        var start = new Date('2020-06-30');
+
+        var timeDiff = now.getTime() - start.getTime();
+        var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
+        $('#love').text(day + '일째');
+
+        var valentine = new Date('2021-02-14');
+        var timeDiff2 = valentine.getTime() - now.getTime();
+        var day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24) + 1);
+        $('#valentine').text(day2 + '일 남음');
+
+        var ms = start.getTime() + 999 * (1000 * 60 * 60 * 24);
+        var thousand = new Date(ms);
+        var thousandDate = thousand.getFullYear() + '.' + (thousand.getMonth()+1) + '.' + thousand.getDate();
+        $('#thousand-date').text(thousandDate);
+    </script>
+
+
+
+step7
+완성해보기.
+그럼 오늘부터 1000일까지 얼마나 남았나.
+        // thousand, now, getTime()
+        var timeDiff3 = thousand.getTime() - now.getTime();
+        var day3 = Math.floor(timeDiff3 / (1000 * 60 * 60 * 24) + 1);
+        $('#thousand').text(day3 + '일 남음');
+를 아래에 추가해주자
+

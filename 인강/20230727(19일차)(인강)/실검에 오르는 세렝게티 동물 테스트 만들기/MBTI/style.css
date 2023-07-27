@@ -1,0 +1,13 @@
+article {
+    display: flex;
+    flex-direction: column;  
+    /* 세로정렬을 하기위해. */
+}
+
+.question {
+    display: none;
+}
+
+.result {
+    display: none;
+}

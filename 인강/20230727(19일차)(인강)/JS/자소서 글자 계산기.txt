@@ -1,0 +1,69 @@
+자소서 글자수 계산기
+step1 소개
+
+step2 DOM
+웹 화면을 구성하는 html을 쉽게 접근할수 있게 해주는 모델.
+
+step3
+<h1>자기소개</h1>
+<textarea id='jasoseol'>
+저는 인성 문제가 없습니다.
+</textarea>
+를 
+document.getElementById('jasoseol').value; 혹은
+document.getElemetById('jasoseol').innerHTML 로 가져올수 있다.
+
+var content = document.getElementById('jasoseol').value;
+console.log(content); 
+-> 콘솔에 띄움.
+
+step4 글자수를 세줘야겠지?
+.length : 문자열의 길이
+var content = document.getElementById('jasoseol').value;
+console.log(content.length); 
+콘솔창에 문자열의 길이가 나온다. 
+
+Step5 문자열의 길이를 원하는 위치와 형태로 표시. span 태그에 넣기
+document.getElementById('count').innerHTML = '(' + content.length + '/200)';
+앞뒤 +를 넣어줌으로 얼마나 문자를 입력했는지 알 수 잇다. 없으면 (0/200)으로 나올뿐.
+
+step6. 이 긴 코드를 여러번 쓸필요가 있을까? -> 함수를 쓰자.
+function 함수이름() {
+명령어1;
+명령어2;
+....}
+여러번 사용해야할떄 써주자.
+        function counter() {
+            var content = document.getElementById('jasoseol').value;
+            document.getElementById('count').innerHTML = '(' + content.length + '/200)';
+        };
+        counter();
+여러줄의 코드를 함수이름과 괄호로 한번에 실행할수 있도록. counter() 부분. 
+
+step7
+글자를 쓸 때마다 자동으로 글자수를 세려면? - 키보드를 누를때마다 글자 수를 세라.
+이벤트 : 키보드를 누를때마다 / 이벤트 핸들링 : 글자수를 세주어라
+<textatra 이벤트=이벤트핸들링></textarea>
+
+    <h1>자기소개</h1>
+    <textarea onkeydown='counter();' class="form-control" rows="3" id="jasoseol">저는 인성 문제가 없습니다.</textarea>
+    <span id="count">(0/200)</span>
+
+step8 200자를 넘으면 써지지않게하는법?
+여러 방법이 있겠지만..  200글자 이후를 잘라버리자.
+.substring() 몇글자까지 자른다!
+
+content.substring(0,5); 0 이상 5 미만. 0~5 인덱스 문자만 나온다.
+따라서 .substring(0, 200);
+
+        function counter() {
+            var content = document.getElementById('jasoseol').value;
+            if (content.length > 200) {
+                content = content.substring(0,200);
+                document.getElementById('jasoseol').value = content;
+            }
+            document.getElementById('count').innerHTML = '(' + content.length + '/200)';
+        }
+        counter();
+
+step9 정리하기.

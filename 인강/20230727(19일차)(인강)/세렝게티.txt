@@ -1,0 +1,46 @@
+부트스트랩을 변경할시, 알아서 덮어씌워지게 CSS를 아래쪽에 두면 좋다. 
+CSS와 JS 코드를 복붙하는데 CSS는 head에, js는 바디 끝에 주기
+
+자바스크립트 객체. 자료를 담는 형태
+var jsObject = { key : value }
+
+jsObject[key] => value
+
+pixabay - 무료 이미지
+
+제이쿼리
+https://api.jquery.com/
+
+부트스트랩
+https://getbootstrap.com/docs/4.5/getting-started/introduction/
+
+SNS 기능 만들기
+addthis 가입후 이용. 원하는 입맛대로 설정하고 링크를 뽑는다.
+공유할 컨텐츠를 체크하고 
+복사할 스크립트가 나온다. 그리고 
+스크립트를 바디태그 마지막 바로 위에 붙여넣기.
+
+inline 코드는 결과화면 태그쪽에 복사 붙여넣기 해준다.
+
+
+광고붙이고 수익화 하기
+1.애드 네트워크
+2. 직접 광고계약. 
+여기선 1번으로 하자.
+
+카카오 에드핏을 이용해보자.
+광고관리 - 새 매체에 들어가 우리의 제목과 주소를 선택해주자.
+나온 코드를 복사하고 원하는 부분에 복붙하자.
+넷 리파이에서 주소로 해주면 됨.
+너무 붙어있다 싶으면 붙여넣기한 애들을 article 캐그로 감싸서 css로 적당히 조절해주자.
+
+이제 2번. 
+연락처를 남겨두면 연락해올거야.
+수수료가 나가지않아서 돈이 더 많을것..
+
+https://www.codelion.net/catalog/Q291cnNlTm9kZTpqbW9r?utm_source=animal_test&utm_medium=web_lecture&utm_campaign=jocoding
+
+이런식에서. a태그와 img 태그를 이용해서 banner 클래스를 달자.
+그리고 css에서 조절.
+
+
