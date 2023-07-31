@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            /* width: 100%;  */
+            /* 반응형 이미지 태그 */
+            /* height: auto; 가 고정되어있다. */
+
+            max-width: 100%;
+            /* 원본 사이즈 이상으로 커지지 않는다. 
+            너무 커지면 깨질수도 있고..*/
+        }
+
+        article {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        article {
+            background-image: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80");
+            background-repeat: no-repeat; 
+            /* 바둑판식으로 계속되지 않도록. */
+            background-size: cover;
+            /* 여기서
+            contain : 온전히 보전하면서 채우려고 함. 아래 여백이 생김
+            cover : 그냥 여백없이 가득참 */
+
+            background-position: 50% 50%;
+            /* x축 y축 */
+
+            /* background: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80") center/cover no-repeat; */
+            /* 한줄로 쓰면. */
+
+            background: url(logo_google.jpeg) center/contain no-repeat;;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <!-- <img src="http://image.cine21.com/resize/cine21/person/2017/1222/16_53_14__5a3cb9ea1e0fc[W578-].jpg" alt=""> -->
+
+    </article>
+    
+</body>
+</html>
