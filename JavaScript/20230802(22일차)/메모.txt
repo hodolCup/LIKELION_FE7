@@ -1,0 +1,45 @@
+DOM은 어렵지만 중요하다.
+TDD는 어렵지만 중요하지 않을수도 있따.
+
+https://github.com/paullabkorea/Algorithm-walk-with-wenivs
+정규표현식
+
+
+문자열 메소드
+repalce() : 정말 많이 사용.
+
+localstring은 패스..
+
+001. replace, include 모두 중요. 자주사용.   -const부분 추가하기 replaceAll 정규표현식..
+카카오 입사문제 조금. padStart) 5자리 0으로 맞추기. 빈자리등..
+
+002. 산술 연산자. 숫자형 /노션
+let 0.1+0.2 는 안된다.
+
+3. 단항 연산. 증감연산. 등호가 세개면 타입까지 본다. (===) 정확하게 에러캐치 가능.
+
+4. 숫자를 표현하는 기법.. 잘 쓰진않는다.
+
+5. isNaN은 사용하지않길 권장.. 나중에 NaN을 다시 다룰 것이다.
+
+5. 매서드 ...text에서 점을 붙이지 않으면 찾을수가 없음. ParseInt.   IsNaN은 사용하지 말자.
+
+6. 중요한점? 꼭 기억하자. and나 or도 뒤를 볼 필요가 없으면 보지 않습니다!
+또한.. 논리연산자 앞에 트루(console.log(true || false)면 뒤에 볼 필요가 없다. 대신 뒤면 봐야한다.
+회원가입 등에서 사용.. 좀 어려울수 있다.
+
+https://codingdojang.com/scode/350?answer_mode=hide
+
+| (or) 더하겠다. 따라서 앞에 1이면 뒤에 볼 필요가 없나?
+& (and) 곱하겠다. 따라서 0이 나오면 볼 필요가 없다. 곱하면 0이니.. 둘 다 만족하니?
+즉.. if문이면 
+AND : 둘 다 만족하면 실행시켜라고 할수있다.
+OR : 둘중 하나만 만족하면 실행해라!
+
+어려우면 7번의 문제 1,2번만 익혀보자..
+
+https://github.com/paullabkorea/programmersLv0
+
+|| 뒤에꺼 봐야지
+
+13번의 1,2,3번 문제만 기억해도 남는 수업..
