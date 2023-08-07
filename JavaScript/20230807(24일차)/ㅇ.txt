@@ -1,0 +1,30 @@
+8월 3일, 
+array 부분 추가. 별 5개 
+
+8월 4일?
+
+001. array 추가하기
+
+손코딩.. 필사
+005의 1,2,3,4 맵
+
+[1, 2, 3, 4].map(v => 'hello world')
+// ['hello1', 'hello2', 'hello3', 'hello4']
+
+[1, 2, 3, 4].map(v => 'hello' + v)
+// ['hello1', 'hello2', 'hello3', 'hello4']
+
+[1, 2, 3, 4].map((v, i) => 'hello' + (i + 1))
+// ['hello1', 'hello2', 'hello3', 'hello4']
+
+[1, 2, 3, 4].map((v, i) => 'hello' + i)
+// ['hello1', 'hello2', 'hello3', 'hello4']
+
+008...step2.. 손코딩하면 정말 좋아.
+
+
+push pop unshift shift map splice slice object forEach sort
+
+
+009.join 중요
+011.. 오늘 배운 전부..요약..? 대부분 암기해야 하는 코드
