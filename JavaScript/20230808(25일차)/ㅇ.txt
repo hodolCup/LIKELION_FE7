@@ -1,0 +1,22 @@
+오전(배웅), 부트스트랩/교안에서 했다는 정보.
+
+오후, 피그마 로그인 화면.
+
+https://raccoonshome.github.io/raccoon/
+이지현님 조의... 
+
+김건희님 매우 잘함..
+
+이예진님 매우 잘함..
+https://github.com/FRONTENDSCHOOL7/CodeReviewStudy/pull/17
+
+강사님.. 
+https://www.notion.so/paullabworkspace/JavaScript-b0a1248a515247789afdd9a16de77ec3
+
+교안? 위니브 워크스페이스 - 견고한~~
+
+
+로그인..
+모듈페이지를 만들어서 가져오는게 좋지!
+
+내일은 객체를 할거야.
