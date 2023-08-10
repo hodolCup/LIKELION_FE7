@@ -1,0 +1,14 @@
+수업 전 질문
+let arr = [1,2,3]
+let arr2 = arr;
+arr === [1,2,3]
+false가 나온다. 왜?
+arr과 arr2는 바라보는 곳은 같아도 각자 저장되어있는 메모리위치는 다른
+
+교안 : 견고한 기본기 / 6. 조건문과 반복문
+
+sort 오름차순 내림차순?
+a-b b-a?
+arr.sort(function(a,b) {
+return a - b;
+});
