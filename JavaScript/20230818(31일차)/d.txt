@@ -1,0 +1,20 @@
+견고한 기본기 - json
+JSON
+- JS 객체형태
+- 문자기반
+- 다른 방식에 비해 가볍고 JS와 호환성이 높음.
+
+json을 이용한 깊은 복사..
+하지만 structuredClone 메소드가 더 제대로된 깊은복사
+
+DOM (document object model)
+
+API (어플리케이션 인터페이스?)
+
+DOM 트리에 접근하기
+CSS 선택자로 접근법.. 좀 쓸지도
+queryselector면 다른애들 쓸 필요가 없으니 뭐.. 편리하고.
+
+
+htmlcollection은 실시간으로 업데이트가 된다.
+nodelist는 그렇지않다. 업데이트 후 다시 콘솔로그를 찍으면 업데이트 될것.
