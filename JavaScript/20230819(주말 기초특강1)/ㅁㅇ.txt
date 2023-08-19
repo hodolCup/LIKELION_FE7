@@ -1,0 +1,27 @@
+우클릭 -  카피 JS 패스
+
+매서드 - 객체 안에있는 함수
+
+for - mdn 시도해보기 ㄱㄱ
+
+while (condition) {
+  statement
+}
+
+
+map - 콜백함수로 매핑해주는거다.
+맵은 뒤에 콜백함수랑 맵핑해주는거다.!
+
+foreach map 차이?
+foreach 하나하나 매칭
+map 매칭해서 새로운 배열
+차이? 배열 반환 하냐 안하냐
+
+오늘한거?
+반복문
+맵 
+foreach
+for 
+while
+
+mdn 시도해보기 한번 가자.
