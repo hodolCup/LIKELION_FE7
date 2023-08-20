@@ -1,0 +1,12 @@
+    // const arr = [1,2,3]
+    // const [a,c,b] = arr;
+
+    // console.log(a,b,c)
+
+    // var o = { p: 42, q: true };
+    var o = { age: 42, name: "hello" };
+    // 구조분해할당할때 {원래키값:내가쓸변수명,원래키값:내가쓸변수명}
+    var { name:이름, age:나이 } = o;
+
+    console.log(나이); // 42
+    console.log(이름); // true

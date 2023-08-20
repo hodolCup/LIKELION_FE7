@@ -1,0 +1,28 @@
+https://ko.javascript.info/
+
+https://plnkr.co/edit/?p=preview&preview
+어바웃 블랭크가 안될때? 코드 테스트하는 사이트
+
+https://ko.javascript.info/switch
+복습하는 킹갓사이트... 중 스위치
+
+return?
+값을 반환하는 것과 창에 띄우는 것은 별개의 문제였네요
+console.log는 콘솔에 표시하는거고 return은 저장하는것일까요?
+리턴은 저장해서 쓸수있다
+함수를 끝내기도 한다.
+
+스위치
+매개변수랑 리턴값
+삼항연산자
+
+KK 알고있거나 이해하고 있는것
+Ku 알고 있지만 이해못하는것
+UK 이해는 하는데 모르는것
+UU 아예모르는
+모르는걸 찾아 알도록..완성을
+
+클로저
+
+정리/요약
+https://var-log.tistory.com/155
