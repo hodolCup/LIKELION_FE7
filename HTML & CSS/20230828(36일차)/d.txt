@@ -1,0 +1,13 @@
+스크롤을 내렸을때 움직이는 하트를 만들예정.
+
+이력서에 넣으면 이쁠듯?
+
+001. 스크롤 내리면 하트가 그려짐
+002. 스크롤 내리면 컬러가 바뀜
+
+모두의 html - svg path
+
+modal
+
+https://paullabworkspace.notion.site/SVG-path-Scroll-22d68451c0e44f75a6b9f77e6113b99c
+https://paullabworkspace.notion.site/drag-drop-f82b310ab7994867bd2fa6ae9a6e9813?pvs=4
