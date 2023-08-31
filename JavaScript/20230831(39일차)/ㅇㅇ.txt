@@ -1,0 +1,16 @@
+get과 set
+
+견고한 기본기 (JS) - 17. 최적화
+https://www.notion.so/paullabworkspace/17-Optimization-edc315f3f9574c9bbbb6a99c0ff05942
+
+면접에 굉장히 자주 나오는 중요한 부분!!!
+
+이미지 최적화? 크라켄. etc.
+이미지와 폰트.. 견고한 기본기 html/css 8번
+
+minify 확장 프로그램.
+f1 로 검색 후 사용.. 압축?
+
+움짤/비디오는 transform을 이용하는게 좋음. gpu를 사용하기에
+
+repaint, reflow를 유발하는건 사용하지말자
