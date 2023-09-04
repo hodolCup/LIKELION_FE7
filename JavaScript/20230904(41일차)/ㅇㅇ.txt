@@ -1,0 +1,23 @@
+비교하기? codediff 코드 디프
+
+깃허브랑 vscode에도 있긴해.
+
+async, await
+
+async. 
+promise 객체를 반환하게 만들수있다. 근데 이러면 fetch랑 동일한게 아닌지?
+함수앞에 async만 붙여주면 되니 편함!
+
+await
+async 안에서만 사용이 된다. 
+
+try / catch 문
+간단한 문법으로 되어있고 종종 예외처리로쓰면 좋다.
+
+9월 1일자에 추가되는중.
+
+비동기 마무리..
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Modules
+모듈관련은 좀 아는게 좋다.
+
