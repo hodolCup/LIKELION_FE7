@@ -1,0 +1,44 @@
+10. 조건부 렌더링
+
+11. 스타일 적용하기
+1.1 일반 css쓸 때
+나와 타인이 만든게 서로 영향을 줌
+자식 부모 스타일 영향 등 상황에 따라 달라진다.
+import 위치 바꾸기, 즉 순서에 따라 달라지기도 
+
+이 문제를 module.css를 사용해 class로 해결
+
+2. styled-components 스킬. 
+가장 인기있는 리액트 라이브러리
+npm install styled-components
+
+리셋css 적용
+
+styled-compor
+
+확장하는 것 사용
+
+props를 받아서 그때그때 여러방식으로 사용법
+
+다양한 문법으로 사용해보기.
+
+실습.
+
+12. 합성 컴포넌트. 
+간단. 냅다 props.children 하면 편함.
+
+13. history.back
+
+10시 48분
+npx create-react-app ./styled_component --template basic-react
+프로젝트 새로 생성하고 생성한 폴더 들어가서
+npm install styled-components
+
+11시 30분
+npm i styled-reset
+
+3시 24분
+npx create-react-app ./composition --template basic-react
+
+3시 36분
+npm install styled-components
