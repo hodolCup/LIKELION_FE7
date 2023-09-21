@@ -1,0 +1,60 @@
+pull add commit push 순
+
+git init : 초기화
+
+레포지토리를 만들면 .git 파일이 만들어지는 것과 같다(git init)
+
+
+레포지토리 복사하기? git clone 링크
+
+레포지토리 만든 후 코드-링크가 나옴. 
+
+깃 클론을 하면 이닛을 할 필요가 없다.
+
+깃.. 코드 버전관리 시스템이라고 볼 수 있다.
+
+깃허브는 원격. 내 컴퓨터에 있는 깃은 로컬 저장소
+
+git add 관리 할 대상의 파일 등록하기
+
+파일 전체를 올리고 싶은 경우에는 git add . <- 한칸 띄우기
+
+Q를 누르면 터미널 초기화
+
+M    : 수정됨
+
+D     : 삭제됨 (git항목에서 표시)
+
+U     : 추적되지 않음. (git항목에서 표시)
+
+git commit -m "커밋 설명 추가"
+
+vscode 변경사항 + : add
+
+git ignore : 깃에 푸시하기 싫은것들 추가
+비밀번호라던가.. 개인정보라던가.. 그런거 추가할수있지.
+
+깃허브 원격 스페이스
+
+
+새로운폴더 만들기
+git init
+git remote add origin <주소>
+git branch -M main
+git pull origin main
+
+
+브렌치 메인 바꾸기? git checkout 바꿀꺼
+
+브렌치 푸시 
+git push --set-upstream origin gary
+(단축어) git push -u origin gary
+
+메인으로 돌아가기? get checkout main
+git switch main(요샌안씀..)
+
+교안 5.2 conflict 실습 전체 코드 따라해보기
+
+풀 리퀘스트? 내 로컬을 다른사람의 원격으로.
+
+git pull --rebase up main
