@@ -1,0 +1,30 @@
+https://paullabworkspace.notion.site/jsonserver-js-e6c336d38ed944d4886a1a60020bee9b
+
+비동기처리.
+
+동기처리? 
+순서대로 진행이 된다.
+
+비동기를 잘 다루기 위한 promise지만 오늘은 다루지안ㄹ는다.
+
+대신 동기는 함수 1이 끝나야 다음이 진행되어 매우 느릴수있다.
+
+Fetch api
+늘 하고있다.
+
+get  이거좀 불러와줘!!
+
+post  동봉하기
+택배를 보내는거 받는거?
+
+http는 바디에. 
+
+npm install -g json-server
+-g ? 터미널 아무데서나 깔아도 되는 글로벌.
+
+이거 에러뜨면 
+sudo npm install -g json-server
+
+권한 열어줌.
+
+json-server --watch db.json 서버열기
