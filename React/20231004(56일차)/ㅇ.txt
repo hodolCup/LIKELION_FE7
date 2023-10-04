@@ -1,0 +1,10 @@
+TDD의 단계
+Jest
+
+ARIA
+
+https://www.w3.org/TR/html-aria/#docconformance
+
+리덕스의 흐름을.. 정리해보자.
+https://www.notion.so/paullabworkspace/1-Redux-eef3be11eacf4ec1b5495b6ca3c4975d
+1. 리덕스란? -> 에 있는 비유 그림
