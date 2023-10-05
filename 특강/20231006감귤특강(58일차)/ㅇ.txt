@@ -1,0 +1,46 @@
+API?
+
+SNS - 감귤마켓으로 실습해볼까.
+
+역할분배는 기능별로?
+
+회원가입 / 홈 / 검색 
+
+페어 프로그래밍? -> 내가 못할거같은데를 끌어올릴 수 있다. 대충 훈수두며 같이하는거
+
+https://www.notion.so/paullabworkspace/HTTP-HTTPS-4ebdff4c0c7f4a5a9e289283009d4114
+
+GET / POST 근본. 
+GET : 내가 받아올 요청을 보낸다.
+POST : 정보 보낼게~ 삭제 / 수정 / 게시글 쓰기 etc
+
+PUT : 서버야 유저 정보를 덮어씌워줘
+DELETE : 서버야 있던 정볼 삭제해줘! 
+
+create read update delete 
+CRUD 로 많이 귀결됨. 
+
+create - post
+read - get
+update - put
+delete - delete
+pogetputdel?
+
+로그인은 POST. GET 보다 안전. 
+브라우저 주소창에 쓰는게 GET요청.
+
+POST로 바꿔주고 (서버주소)/user 
+
+Req) 리퀘스트
+
+{
+        "user": {
+                "username": "account_test",
+                "email": "account_test4321@test.com",
+                "password": "123123",
+                "accountname": "account_test4321"
+        } 
+} 
+
+http통신을 이용한 백엔드 api 이용
+
