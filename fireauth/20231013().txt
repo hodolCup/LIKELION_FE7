@@ -1,0 +1,13 @@
+.env 파일은 왜없어?
+fBase.js 파일은 
+
+test1@test.com
+123123
+test1
+
+AuthContext useEffect 속도차이때문에 사용자 정보가 늦게뜨는걸 방지하기 위해.
+
+오전엔
+회원가입 
+로그인
+로그아웃
